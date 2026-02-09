@@ -79,18 +79,25 @@
 <body>
 
   <header style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:40px;text-align:left;position:relative;">
+	 <!-- Animations -->
+    <style>
+      @keyframes fadeInLeft {
+        from { opacity:0; transform:translateX(-40px);} 
+        to { opacity:1; transform:translateX(0);} 
+      }
+      @keyframes fadeInRight {
+        from { opacity:0; transform:translateX(40px);} 
+        to { opacity:1; transform:translateX(0);} 
+      }
+      @keyframes pulse {
+        0% { transform:scale(1);} 
+        50% { transform:scale(1.05);} 
+        100% { transform:scale(1);} 
+      }
+    </style>
+	  
 
     <!-- Availability Badge -->
-	<a href="https://forms.gle/BRtKfB87Drc7t4jG9" 
-	   target="_blank"
-	   style="background:#ff9800;
-			  color:#ffffff;
-			  padding:14px 28px;
-			  border-radius:30px;
-			  font-weight:bold;
-			  text-decoration:none;">
-	   🧑‍💼 Consultant Form
-	</a>
     <div style="position:absolute;top:20px;right:20px;background:#0f9d58;color:#fff;padding:8px 16px;border-radius:20px;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.2);animation:pulse 2s infinite;">
       Available for Freelance & Full-Time
     </div>
@@ -110,9 +117,7 @@
         <div><strong style="font-size:1.5rem;">5+ Years</strong><br /><span>Experience</span></div>
         <div><strong style="font-size:1.5rem;">50+ Projects</strong><br /><span>Automations</span></div>
         <div><strong style="font-size:1.5rem;">Global</strong><br /><span>Clients</span></div>
-      </div>
-
-      
+      </div> 
     </div>
 
       <!-- CTA Buttons -->
@@ -124,24 +129,8 @@
     <div style="flex:0 0 200px;text-align:center;animation:fadeInRight 1.2s ease;">
       <img src="IMG20250413193759.png" alt="Surendra Kumar" style="width:180px;height:220px;object-fit:cover;border-radius:12px;border:5px solid #ffffff;box-shadow:0 8px 20px rgba(0,0,0,0.25);" />
     </div>
-
-    <!-- Animations -->
-    <style>
-      @keyframes fadeInLeft {
-        from { opacity:0; transform:translateX(-40px);} 
-        to { opacity:1; transform:translateX(0);} 
-      }
-      @keyframes fadeInRight {
-        from { opacity:0; transform:translateX(40px);} 
-        to { opacity:1; transform:translateX(0);} 
-      }
-      @keyframes pulse {
-        0% { transform:scale(1);} 
-        50% { transform:scale(1.05);} 
-        100% { transform:scale(1);} 
-      }
-    </style>
-  
+		<a href="https://forms.gle/BRtKfB87Drc7t4jG9" target="_blank" style="background:#ff9800;color:#ffffff;padding:14px 28px;border-radius:30px;font-weight:bold;text-decoration:none;">🧑‍💼 Consultant Form </a>
+   
   </header>
 
 	  <section>
